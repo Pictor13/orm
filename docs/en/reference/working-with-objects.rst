@@ -250,6 +250,10 @@ as follows:
 -  If X is a detached entity, an exception will be thrown on
    flush.
 
+.. caution::
+
+    Do not pass detached entities to the persist operation.
+
 Removing entities
 -----------------
 
