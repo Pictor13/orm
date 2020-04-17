@@ -254,7 +254,7 @@ as follows:
 
     Do not pass detached entities to the persist operation. The persist operation always
     considers entities that are not yet known to the ``EntityManager`` as new entities
-    (refer to the ``STATE_NEW`` inside the ``UnitOfWork``).
+    (refer to the ``STATE_NEW`` constant inside the ``UnitOfWork``).
 
 Removing entities
 -----------------
@@ -874,4 +874,3 @@ You can access your repository now by calling:
     // $em instanceof EntityManager
     
     $admins = $em->getRepository('MyDomain\Model\User')->getAllAdminUsers();
-
