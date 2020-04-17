@@ -253,7 +253,8 @@ as follows:
 .. caution::
 
     Do not pass detached entities to the persist operation. The persist operation always
-    considers entities that are not yet known to this EntityManager as NEW.
+    considers entities that are not yet known to the ``EntityManager`` as new entities
+    (refer to the ``STATE_NEW`` inside the ``UnitOfWork``).
 
 Removing entities
 -----------------
